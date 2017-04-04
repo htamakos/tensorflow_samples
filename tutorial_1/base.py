@@ -28,7 +28,7 @@ init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)
 
-for i in rnage(1000):
+for i in range(1000):
     sess.run(train, { x: x_train, y: y_train })
 
 # evaluate training accurancy
